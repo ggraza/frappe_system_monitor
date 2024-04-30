@@ -40,7 +40,7 @@ def execute(**kwargs):
 @frappe.whitelist(allow_guest=True)
 def server_status(**kwargs):
     res = frappe._dict({})
-    rees.platform = platform.system()
+    res.platform = platform.system()
     res.running_since=datetime.datetime.fromtimestamp(psutil.boot_time()).strftime("%Y-%m-%d %H:%M:%S")
     cpu = frappe._dict({})
     cpu.percent = psutil.cpu_percent(interval=0)
