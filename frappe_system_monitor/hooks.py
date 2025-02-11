@@ -1,9 +1,9 @@
 from . import __version__ as app_version
 
 app_name = "frappe_system_monitor"
-app_title = "Frappe System Monitor"
+app_title = "System Monitor"
 app_publisher = "Anthony Emmanuel"
-app_description = "System monitor for frappe and ERPNExt"
+app_description = "System monitor for ERP"
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "hackacehuawei@gmail.com"
